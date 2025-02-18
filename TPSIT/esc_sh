@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo "inserisci la password"
+read password1
+echo "inserisci il nome utente"
+read nome1
+password2="101008"
+nome2="alessio"
+
+if [ $password1 = $password2 ] && [ $nome1 = $nome2 ]; then
+    echo "ciao $nome benvenuto nel programma"
+else 
+    echo "il nome o la password sono sbagliate"
+fi
