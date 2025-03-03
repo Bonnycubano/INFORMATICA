@@ -4,11 +4,11 @@ somma=0
 
 
 if [ "$1" == "add" ]; then
-    i=2
+    i=1
     
     while [ $i -le $# ]; do
         somma=$((somma + ${!i}))  
-        ((i++))                   
+        i=$((i+1))                   
     done
     
     echo "Risultato della somma=$somma"
