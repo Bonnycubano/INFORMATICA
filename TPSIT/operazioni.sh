@@ -1,10 +1,6 @@
 #!/bin/bash
 
-if [ $# -ne 3 ]; then
-    echo "Errore: devi fornire 3 argomenti. Usa il formato:"
-    echo "$0 operazione numero1 numero2"
-    return
-fi
+
 
 operazione=$1
 numero1=$2
