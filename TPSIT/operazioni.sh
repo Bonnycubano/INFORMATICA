@@ -13,6 +13,6 @@ if [ "$1" == "add" ]; then
     
     echo "Risultato della somma=$somma"
 else
-    echo "Per favore, usa 'add' come primo argomento."
+    echo "la somma degli argomenti e':  $somma"
 fi
 
