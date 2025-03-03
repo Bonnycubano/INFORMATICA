@@ -1,8 +1,5 @@
 #!/bin/bash
 
-
-
-
 echo "inserisci l'operazione"
 read operazione
 echo "inserisci un numero"
