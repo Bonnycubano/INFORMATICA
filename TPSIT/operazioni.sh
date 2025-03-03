@@ -2,11 +2,13 @@
 
 
 
-operazione=$1
-numero1=$2
-numero2=$3
 
-
+echo "inserisci l'operazione"
+read operazione
+echo "inserisci un numero"
+read numero1
+echo "inserisci un altro numero"
+read numero2
 if [ "$operazione" == "add" ]; then
     risultato=$((numero1 + numero2))  
     echo "Risultato della somma: $risultato"
