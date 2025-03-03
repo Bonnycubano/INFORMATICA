@@ -1,12 +1,12 @@
 #!/bin/bash
 
-somma=0  # Inizializzo la variabile somma
-num=1    # Imposto num su un valore diverso da 0 per entrare nel ciclo
+somma=0  
+num=1    
 while [ $num -ne 0 ]; do
     echo "Inserisci un numero intero: "
     read num
     
-    if [ $num -ne 0 ]; then  # Se il numero non è 0, sommo
+    if [ $num -ne 0 ]; then 
         ((somma += num))
     fi
 done
