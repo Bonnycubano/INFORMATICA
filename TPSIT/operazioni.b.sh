@@ -1,7 +1,7 @@
 #/bin/bash
 somma=0
 
-while [ $# -ge $i ]; do
+while [ $num -ne 0 ]; do
 echo "inserisci un numero intero: "
 read num
     
