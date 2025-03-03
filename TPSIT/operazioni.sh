@@ -9,16 +9,16 @@ echo "inserisci un numero"
 read numero1
 echo "inserisci un altro numero"
 read numero2
-if [ "$operazione" == "add" ]; then
+if [ "$operazione" == "addizione" ]; then
     risultato=$((numero1 + numero2))  
     echo "Risultato della somma: $risultato"
-elif [ "$operazione" == "subtract" ]; then
+elif [ "$operazione" == "sottrazione" ]; then
     risultato=$((numero1 - numero2))  
     echo "Risultato della sottrazione: $risultato"
-elif [ "$operazione" == "multiply" ]; then
+elif [ "$operazione" == "moltiplicazione" ]; then
     risultato=$((numero1 * numero2))  
     echo "Risultato della moltiplicazione: $risultato"
-elif [ "$operazione" == "divide" ]; then
+elif [ "$operazione" == "divisione" ]; then
     if [ $numero2 -eq 0 ]; then  
         echo "Errore: non è possibile dividere per zero!"
     else
