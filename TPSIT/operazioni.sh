@@ -1,11 +1,9 @@
 #!/bin/bash
 
-echo "inserisci l'operazione"
-read operazione
-echo "inserisci un numero"
-read numero1
-echo "inserisci un altro numero"
-read numero2
+operazione=$1
+numero1=$2
+numero2=$3
+
 if [ "$operazione" == "addizione" ]; then
     risultato=$((numero1 + numero2))  
     echo "Risultato della somma: $risultato"
@@ -23,8 +21,9 @@ elif [ "$operazione" == "divisione" ]; then
         echo "Risultato della divisione: $risultato"
     fi
 else
-    echo "Operazione non valida. Usa addizzione, sottrazione, moltiplicazione, o divisione."
+    echo "Operazione non valida. Usa addizione, sottrazione, moltiplicazione o divisione."
 fi
+
 
 
 
