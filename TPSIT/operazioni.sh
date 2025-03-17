@@ -1,28 +1,33 @@
 #!/bin/bash
 
-operazione=$1
-numero1=$2
-numero2=$3
 
-if [ "$operazione" == "addizione" ]; then
-    risultato=$((numero1 + numero2))  
-    echo "Risultato della somma: $risultato"
-elif [ "$operazione" == "sottrazione" ]; then
-    risultato=$((numero1 - numero2))  
-    echo "Risultato della sottrazione: $risultato"
-elif [ "$operazione" == "moltiplicazione" ]; then
-    risultato=$((numero1 * numero2))  
-    echo "Risultato della moltiplicazione: $risultato"
-elif [ "$operazione" == "divisione" ]; then
-    if [ $numero2 -eq 0 ]; then  
-        echo "Errore: non è possibile dividere per zero!"
-    else
-        risultato=$((numero1 / numero2))  
-        echo "Risultato della divisione: $risultato"
-    fi
-else
-    echo "Operazione non valida. Usa addizione, sottrazione, moltiplicazione o divisione."
+#Assegno alle variabili i diversi argomenti
+operazione=$1
+num1=$2
+num2=$3
+# Verifica che i numerisiano validi
+if | [[ "$num1" =~ ^-?[0-9]+$ ]] || ! [[ "$num2" =~ ^-?[0-9]+$ ]] then
+echo "devono essere numeri interi"
+exit 1
 fi
+
+if ["$operazione" = "addizione" ] then
+echo "Il risultato dell'addizione e' = $(( num1 + num2 ))"
+elif ["$operazione" = "sottrazione" ] then
+echo "Il risultato della sottrazione e' = $(( numl - num2 ))"
+
+elif [ "Soperazione" = "moltiplicazione"] then
+echo "Il risultato del prodotto e' = $(( num1 * num2 ))"
+elif [ "Soperazione" = "divisione"] then
+if[ "$num2" -eq 0 ] then
+echo "Impossibile dividere un numero per zero"
+exit 2
+else
+    echo "Il risultato dela divisione e' = $(( num1 / num2 ))"
+fi
+
+
+
 
 
 

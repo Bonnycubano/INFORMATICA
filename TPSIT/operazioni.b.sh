@@ -12,3 +12,7 @@ while [ $num -ne 0 ]; do
 done
 
 echo "La somma degli argomenti è: $somma"
+
+
+
+
